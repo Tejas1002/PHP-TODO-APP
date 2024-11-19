@@ -1,0 +1,156 @@
+/* General Styles */
+body {
+    font-family: 'poppins';
+    background-color: #f8f9fa;
+    margin: 0;
+    padding: 0;
+    height: 100vh; /* Full viewport height */
+    display: flex; /* Enable Flexbox */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    color: #333;
+}
+
+/* Main Container for All Content */
+.main-container {
+    width: 100%;
+    max-width: 600px;
+    padding: 20px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    text-align: center;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .main-container {
+        padding: 15px;
+        max-width: 90%;
+    }
+}
+
+/* Form Styling (Shared by Index and Edit) */
+form {
+    margin-bottom: 20px;
+    display: flex;
+    flex-wrap: wrap; /* Ensure content doesn't overflow */
+    justify-content: center; /* Center form elements horizontally */
+    gap: 10px;
+}
+
+form input {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 300px;
+}
+
+form button {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+form button:hover {
+    background-color: #0056b3;
+}
+
+/* Task List Styling (Index Page) */
+ul {
+    list-style-type: none;
+    padding: 0;
+    width: 100%;
+    max-width: 600px;
+}
+
+li {
+    background-color: white;
+    border: 1px solid #ddd;
+    padding: 15px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+li.completed {
+    text-decoration: line-through;
+    color: #aaa;
+}
+
+li span {
+    font-size: 18px;
+    flex: 1;
+}
+
+li a {
+    text-decoration: none;
+    color: #007bff;
+    font-size: 14px;
+    margin-left: 10px;
+}
+
+li a:hover {
+    text-decoration: underline;
+}
+
+/* Footer Styling */
+footer {
+    margin-top: 20px;
+    font-size: 14px;
+    color: #666;
+}
+
+/* Edit Form (Edit Page) */
+.edit-form .form-group {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+}
+
+.edit-form label {
+    font-size: 16px;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.edit-form input[type="text"] {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    width: 100%;
+}
+
+.edit-form .form-actions {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.edit-form .form-actions button,
+.edit-form .form-actions .btn-back {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.edit-form .form-actions .btn-back {
+    background-color: #6c757d;
+}
+
+.edit-form .form-actions .btn-back:hover {
+    background-color: #5a6268;
+}
